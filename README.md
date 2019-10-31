@@ -67,3 +67,14 @@ npm install
 npm run build
 ```
 The compiled file is located at ``build/bimserverapi.js``
+
+## Pulling changes from upstream
+
+```bash
+git remote add upstream https://github.com/opensourceBIM/BIMserver-JavaScript-API.git
+git fetch upstream master
+git merge upstream/master
+
+git checkout customization
+git rebase master
+```
